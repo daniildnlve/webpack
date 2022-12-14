@@ -1,0 +1,30 @@
+.icon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  .icon__img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .icon__text {
+    font-weight: 500;
+    font-size: $font-size--link;
+    color: $text-color;
+    letter-spacing: -0.4px;
+
+    @media (min-width: $screen-mobile) {
+      display: none;  
+    }
+
+    @media (min-width: $screen-desktop) {
+      display: inline;
+    }
+  }
+}

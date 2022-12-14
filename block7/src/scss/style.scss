@@ -1,0 +1,21 @@
+@import '~normalize.css';
+
+@import './fonts.scss';
+@import './variables.scss';
+@import './reset.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
+
+@import '../blocks/page/page.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/icon/icon.scss';
+@import '../blocks/logo/logo.scss';
+@import '../blocks/menu/menu.scss';
+@import '../blocks/section-block/section-block.scss';
+@import '../blocks/gb-gradient/gb-gradient.scss';
+@import '../blocks/brands/brands.scss';
+@import '../blocks/slide-button/slide-button.scss';
+@import '../blocks/technics/technics.scss';
+@import '../blocks/services/services.scss';
+@import '../blocks/send-button/send-button.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/left-menu/left-menu.scss';
