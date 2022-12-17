@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
-
+  
   .icon__img {
     display: flex;
     width: 40px;
@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    transition: opacity 0.3s;
   }
 
   .icon__text {
@@ -18,6 +19,7 @@
     font-size: $font-size--link;
     color: $text-color;
     letter-spacing: -0.4px;
+    transition: color 0.3s;
 
     @media (min-width: $screen-mobile) {
       display: none;  
@@ -25,6 +27,16 @@
 
     @media (min-width: $screen-desktop) {
       display: inline;
+    }
+  }
+
+  &:hover {
+    .icon__img {
+      opacity: 0.7;
+    }
+
+    .icon__text {
+      color: $color-fuchsia;
     }
   }
 }

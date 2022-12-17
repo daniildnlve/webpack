@@ -8,100 +8,168 @@
 </head>
 <body>
   <div class="page">
-    <aside class="left-menu">
-      <div class="menu-header">
-        <ul class="menu-header__content">
-          <li class="menu-header__item">
-            <button class="icon" aria-label="Закрыть">
-              <span class="icon__img">
-                <img src="./img/exit.svg" alt="Закрыть" />
+    <aside class="modal-fb">
+      <div class="modal-fb__container">
+        <div class="modal-fb__button">
+          <button class="icon fb-close">
+            <span class="icon__img">
+              <img src="img/exit.svg" alt="Закрыть">
+            </span>
+          </button>
+        </div>
+        <form>
+          <fieldset class="modal-fb__fieldset">
+            <legend class="modal-caption">
+              Обратная связь
+            </legend>
+            <input class="modal-input" type="text" required placeholder="Имя" maxlength="20">
+            <input class="modal-input" type="tel" required placeholder="Телефон" minlength="11" maxlength="11" pattern="^[ 0-9]+$">
+            <input class="modal-input" type="email" required placeholder="Электронная почта" pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"> 
+            <textarea class="modal-input modal-fb__textarea" required placeholder="Сообщение" minlength="15" maxlength="180"></textarea>
+            <p class="modal-agreement">
+              Нажимая "отправить", вы даете согласие
+              на <a class="modal-agreement__link" href="#">обработку персональных даннных</a> и 
+              соглашаетесь с нашей <a class="modal-agreement__link" href="#">политикой конфиденциальности</a>
+            </p>
+            <button class="send-button modal-fb__send" type="submit">
+              <span class="send-button__text">отправить</span>
+              <span class="send-button__img">
+                <img src="./img/dropdown.svg" alt="заказать">
               </span>
             </button>
-          </li>
-          <li class="menu-header__item">
-            <a class="logo" href="#">
-              <img src="./img/Group.svg" alt="Логотип компании" />
-            </a>
-          </li>
-          <li class="menu-header__item">
-            <button class="icon" aria-label="Поиск">
-              <span class="icon__img">
-                <img src="./img/search.svg" alt="Поиск" />
-              </span>
-            </button>
-          </li>
-        </ul>
+          </fieldset>
+        </form>
       </div>
-      <ul class="menu-nav left-menu__navigation">
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Ремонт техники</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Услуги и сервисы</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Корпоративным клиентам</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Продавцам техники</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Партнерам</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Производителям</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Наши сервисные центры</a>
-        </li>
-        <li class="menu-nav__item">
-          <a class="menu-nav__link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <div class="menu-footer">
-        <div class="menu-footer__content">
-          <ul class="menu-footer__buttons">
-            <li>
-              <button class="icon" aria-label="Звонок">
-                <span class="icon__img">
-                  <img src="./img/call.svg" alt="Звонок" />
-                </span>
-              </button>
+      <div class="modal-fb__fog"></div>  
+    </aside>
+    <aside class="modal-call">
+      <div class="modal-call__container">
+        <div class="modal-call__button">
+          <button class="icon call-close">
+            <span class="icon__img">
+              <img src="img/exit.svg" alt="Закрыть">
+            </span>
+          </button>
+        </div>
+        <form>
+          <fieldset class="modal-call__fieldset">
+            <legend class="modal-caption">
+              Заказать звонок
+            </legend>
+            <input class="modal-input" type="tel" required placeholder="Телефон" minlength="11" maxlength="11"  pattern="^[ 0-9]+$">
+            <p class="modal-agreement">
+              Нажимая "отправить", вы даете согласие
+              на <a class="modal-agreement__link" href="#">обработку персональных даннных</a> и 
+              соглашаетесь с нашей <a class="modal-agreement__link" href="#">политикой конфиденциальности</a>
+            </p>
+            <button class="send-button modal-call__send" type="submit">
+              <span class="send-button__text">отправить</span>
+              <span class="send-button__img">
+                <img src="./img/dropdown.svg" alt="заказать">
+              </span>
+            </button>
+          </fieldset>
+        </form>
+      </div> 
+      <div class="modal-call__fog"></div> 
+    </aside>
+    <aside class="left-menu">
+      <div class="left-menu__container">
+        <div class="menu-header">
+            <ul class="menu-header__content">
+              <li class="menu-header__item">
+                <button class="icon menu-close" aria-label="Закрыть">
+                  <span class="icon__img">
+                    <img src="./img/exit.svg" alt="Закрыть" />
+                  </span>
+                </button>
+              </li>
+              <li class="menu-header__item">
+                <a class="logo" href="#">
+                  <img src="./img/Group.svg" alt="Логотип компании" />
+                </a>
+              </li>
+              <li class="menu-header__item">
+                <button class="icon" aria-label="Поиск">
+                  <span class="icon__img">
+                    <img src="./img/search.svg" alt="Поиск" />
+                  </span>
+                </button>
+              </li>
+            </ul>
+        </div>
+        <ul class="menu-nav left-menu__navigation">
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Ремонт техники</a>
             </li>
-            <li>
-              <button class="icon" aria-label="Обратная связь">
-                <span class="icon__img">
-                  <img src="./img/chat.svg" alt="Обратная связь" />
-                </span>
-              </button>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Услуги и сервисы</a>
             </li>
-            <li>
-              <button class="icon" aria-label="Личный кабинет">
-                <span class="icon__img">
-                  <img src="./img/profile.svg" alt="Личный кабинет" />
-                </span>
-              </button>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Корпоративным клиентам</a>
             </li>
-          </ul>
-          <a class="menu-footer__email" href="mailto:mail@cps.com"
-            >mail@cps.com</a
-          >
-          <a class="menu-footer__phone" href="tel:88008908900"
-            >8 800 890 8900</a
-          >
-          <ul class="menu-footer__lang-buttons">
-            <li><button class="menu-footer__lang-button">RU</button></li>
-            <li><button class="menu-footer__lang-button">EN</button></li>
-            <li><button class="menu-footer__lang-button">CH</button></li>
-          </ul>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Партнерам</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Производителям</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="#">Контакты</a>
+            </li>
+        </ul>
+        <div class="menu-footer">
+            <div class="menu-footer__content">
+              <ul class="menu-footer__buttons">
+                <li>
+                  <button class="icon call" aria-label="Звонок">
+                    <span class="icon__img">
+                      <img src="./img/call.svg" alt="Звонок" />
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button class="icon feedback" aria-label="Обратная связь">
+                    <span class="icon__img">
+                      <img src="./img/chat.svg" alt="Обратная связь" />
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button class="icon" aria-label="Личный кабинет">
+                    <span class="icon__img">
+                      <img src="./img/profile.svg" alt="Личный кабинет" />
+                    </span>
+                  </button>
+                </li>
+              </ul>
+              <a class="menu-footer__email" href="mailto:mail@cps.com"
+                >mail@cps.com</a
+              >
+              <a class="menu-footer__phone" href="tel:88008908900"
+                >8 800 890 8900</a
+              >
+              <ul class="menu-footer__lang-buttons">
+                <li><button class="menu-footer__lang-button" disabled>RU</button></li>
+                <li><button class="menu-footer__lang-button">EN</button></li>
+                <li><button class="menu-footer__lang-button">CH</button></li>
+              </ul>
+            </div>
         </div>
       </div>
+      <div class="left-menu__fog"></div>
     </aside>
     <div class="container">
       <header class="header">
         <ul class="header__content">
           <li class="header__item">
-            <button class="icon" aria-label="Меню">
+            <button class="icon burger" aria-label="Меню">
               <span class="icon__img"
                 ><img src="img/burger.svg" alt="Меню"
               /></span>
@@ -113,14 +181,14 @@
             </a>
           </li>
           <li class="header__item">
-            <button class="icon" aria-label="Звонок">
+            <button class="icon call" aria-label="Звонок">
               <span class="icon__img"
                 ><img src="img/call.svg" alt="Звонок"
               /></span>
             </button>
           </li>
           <li class="header__item">
-            <button class="icon" aria-label="Обратная связь">
+            <button class="icon feedback" aria-label="Обратная связь">
               <span class="icon__img"
                 ><img src="img/chat.svg" alt="Обратная связь"
               /></span>
@@ -180,6 +248,17 @@
         <section class="section-block">
           <div class="section-block__content">
             <div class="section-block__text">
+              <p class="section-block__paragraph">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="section-block__paragraph">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
               <p class="section-block__paragraph">
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с

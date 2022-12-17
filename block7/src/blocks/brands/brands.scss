@@ -45,13 +45,15 @@
   }
 
   &__wrapper {
+    transition: max-height 0.3s ease;
+
     @media (min-width: $screen-tablet) {
       width: 768px;
       margin: 24px;
       flex-wrap: wrap;
       gap: 16px 24px;
       max-height: 250px;
-      transition: max-height 0.3s ease, height 0.3s ease;
+      overflow: hidden;
     }
 
     @media (min-width: $screen-desktop) {
@@ -62,8 +64,6 @@
 
     &--hidden {
       @media (min-width: $screen-tablet) {
-        height: 160px;
-        overflow: hidden;
         max-height: 160px;
       }
     }
@@ -97,6 +97,7 @@
     border-radius: 6px;
     height: 72px;
     padding: 0 16px;
+    transition: border-color 0.3s;
 
     @media (min-width: $screen-mobile) {
       width: 240px;
@@ -108,6 +109,14 @@
 
     @media (min-width: $screen-desktop) {
       width: 240px;
+    }
+
+    &:hover {
+      border-color: $color-fuchsia;
+
+      .slide-button {
+        transform: rotate(90deg);
+      }
     }
   }
 
@@ -172,6 +181,7 @@
     font-size: $font-size--link;
     font-weight: 500;
     position: relative;
+    transition: color 0.3s;
 
     @media (min-width: $screen-mobile) {
       display: none;
@@ -184,6 +194,10 @@
 
     @media (min-width: $screen-desktop) {
       margin-left: 63px;
+    }
+
+    &:hover {
+      color: $color-fuchsia;
     }
 
     &::before {

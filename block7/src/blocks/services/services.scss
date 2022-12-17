@@ -159,16 +159,16 @@
   }
 
   &__offer {
-    margin: 0 16px 188px 16px;
+    margin: 0 16px 40px 16px;
 
     @media (min-width: $screen-tablet) {
       width: 720px;
-      margin: 24px auto 153px auto;
+      margin: 24px auto 50px auto;
     }
 
     @media (min-width: $screen-desktop) {
       width: 421px;
-      margin: 32px 32px 136px 32px;
+      margin: 32px 32px 50px 32px;
     }
   }
 
@@ -183,6 +183,11 @@
     font-size: $font-size--link;
     color: $text-color;
     font-weight: 500;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-fuchsia;
+    }
 
     &::after {
       content: url("../img/arrow.svg");
