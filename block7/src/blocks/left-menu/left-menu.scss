@@ -56,6 +56,7 @@
   height: 100vh;
   left: -1000px;
   transition: left 0.3s ease-out;
+  overflow-y: scroll;
 
   @media (min-width: $screen-mobile) {
     width: 100vw;
@@ -70,5 +71,10 @@
   @media (min-width: $screen-desktop) {
     box-shadow: none;
     position: static;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }

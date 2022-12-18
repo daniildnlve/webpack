@@ -102,6 +102,7 @@
     @media (min-width: $screen-mobile) {
       width: 260px;
       height: 200px;
+      grid-template-rows: 52px 41px 41px;
     }
 
     @media (min-width: $screen-tablet) {
@@ -111,6 +112,7 @@
       height: auto;
       background: 0;
       grid-template-columns: 1fr 96px 101px 119px;
+      grid-template-rows: auto;
     }
 
     @media (min-width: $screen-desktop) {
