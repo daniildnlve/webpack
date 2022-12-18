@@ -1,2 +1,3 @@
-# Сайт - https://daniildnlve.github.io/webpack/
+# Сайт
+- https://daniildnlve.github.io/webpack/
 
