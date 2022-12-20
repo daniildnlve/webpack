@@ -1,9 +1,9 @@
 .menu {
   flex-grow: 1;
 
-  .menu__navigation {
+  &__navigation {
     display: flex;
-       
+
     @media (min-width: $screen-mobile) {
       overflow-x: scroll;
     }
@@ -16,70 +16,70 @@
       width: 0;
       height: 0;
     }
+  }
 
-    .menu__points {
-      display: flex;
-      align-items: center;
-      white-space: nowrap;
-      justify-content: flex-start;
+  &__points {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: flex-start;
+
+    @media (min-width: $screen-mobile) {
+      margin: 24px 16px;
+      flex-wrap: nowrap;
+    }
+
+    @media (min-width: $screen-tablet) {
+      margin: 32px 24px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      flex-wrap: wrap;
+      margin: 20px 32px 5px 32px;
+      row-gap: 10px;
+    }
+
+    &::after {
+      content: '';
+      height: 40px;
+      width: 24px;
+      position: absolute;
+      right: 0px;
+      background: linear-gradient(
+        270deg,
+        #f8f8f8 16.84%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
 
       @media (min-width: $screen-mobile) {
-        margin: 24px 16px;
-        flex-wrap: nowrap;
+        top: 176px;
       }
 
       @media (min-width: $screen-tablet) {
-        margin: 32px 24px;
+        top: 184px;
       }
 
       @media (min-width: $screen-desktop) {
-        flex-wrap: wrap;
-        margin: 20px 32px 5px 32px;
-        row-gap: 10px;
+        display: none;
       }
+    }
+  }
 
-      &::after {
-        content: "";
-        height: 40px;
-        width: 24px;
-        position: absolute;
-        right: 0px;
-        background: linear-gradient(
-          270deg,
-          #f8f8f8 16.84%,
-          rgba(248, 248, 248, 0.0001) 100%
-        );
+  &__point {
+    font-size: $font-size--link;
+    line-height: 24px;
+    font-weight: 500;
+    color: $text-color--gray;
+    letter-spacing: -0.2px;
+    border: 2px solid transparent;
+    display: block;
+    padding: 6px 14px;
+    transition: border 0.3s, background-color 0.3s;
 
-        @media (min-width: $screen-mobile) {
-          top: 176px;
-        }
-
-        @media (min-width: $screen-tablet) {
-          top: 184px;
-        }
-
-        @media (min-width: $screen-desktop) {
-          display: none;
-        }
-      }
-
-      .menu__point {
-        font-size: $font-size--link;
-        line-height: 24px;
-        font-weight: 500;
-        color: $text-color--gray;
-        letter-spacing: -0.2px;
-        border: 2px solid transparent;
-        display: block;
-        padding: 6px 14px;
-        transition: border 0.3s, background-color 0.3s;
-
-        &:hover {
-          background-color: #ffffff;
-          border: 2px solid #b8ffec;
-          border-radius: 6px;
-        }
-      }
+    &:hover {
+      background-color: #ffffff;
+      border: 2px solid #b8ffec;
+      border-radius: 6px;
     }
   }
 

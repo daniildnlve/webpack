@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
-  
-  .icon__img {
+
+  &__img {
     display: flex;
     width: 40px;
     height: 40px;
@@ -14,7 +14,7 @@
     transition: opacity 0.3s;
   }
 
-  .icon__text {
+  &__text {
     font-weight: 500;
     font-size: $font-size--link;
     color: $text-color;
@@ -22,7 +22,7 @@
     transition: color 0.3s;
 
     @media (min-width: $screen-mobile) {
-      display: none;  
+      display: none;
     }
 
     @media (min-width: $screen-desktop) {

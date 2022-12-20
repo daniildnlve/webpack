@@ -1,11 +1,10 @@
 .left-menu {
   display: flex;
   min-width: 100px;
-    
+
   @media (min-width: $screen-mobile) {
     position: fixed;
     z-index: 2;
-    
   }
 
   @media (min-width: $screen-desktop) {
@@ -28,7 +27,7 @@
         height: 100vh;
         z-index: -1;
         background-color: $color-white;
-        opacity: 0.9;  
+        opacity: 0.9;
       }
     }
 

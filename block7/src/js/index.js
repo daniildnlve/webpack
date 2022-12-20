@@ -1,7 +1,7 @@
-import '../scss/style.scss';
+import '../scss/style.scss'
 
-import './swipers';
-import './brands';
-import './technics';
-import './modal';
-import './section-block';
+import './swipers'
+import './brands'
+import './technics'
+import './modal'
+import './section-block'

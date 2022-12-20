@@ -20,13 +20,13 @@
       transform: rotate(90deg);
     }
   }
-    &__text {
-      line-height: 24px;
-    }
+  &__text {
+    line-height: 24px;
+  }
 
-    &__img {
-      width: 7px;
-      height: 10px;
-      transition: transform 0.3s;
-    }
+  &__img {
+    width: 7px;
+    height: 10px;
+    transition: transform 0.3s;
+  }
 }

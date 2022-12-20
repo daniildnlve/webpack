@@ -4,9 +4,9 @@
   color: $text-color;
   letter-spacing: -0.8px;
   line-height: 32px;
-  
+
   &::before {
-    content: "";
+    content: '';
     width: 4px;
     height: 40px;
     background-color: $color-elem;

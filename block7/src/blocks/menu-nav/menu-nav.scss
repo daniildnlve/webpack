@@ -4,7 +4,7 @@
   gap: 24px;
   padding: 46px 24px 0 24px;
   position: relative;
-  
+
   &__link {
     display: flex;
     padding: 5px 0;
@@ -19,7 +19,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       height: 32px;
       width: 4px;
       background-color: $color-elem;
@@ -31,7 +31,6 @@
     }
 
     &:hover::before {
-      
       opacity: 1;
     }
   }
