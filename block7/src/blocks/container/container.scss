@@ -11,4 +11,8 @@
   @media (min-width: $screen-desktop) {
     max-width: 1120px;
   }
+
+  &__main {
+    flex-grow: 1;
+  }
 }
