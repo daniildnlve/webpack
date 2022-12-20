@@ -1155,81 +1155,86 @@ a {
   .logo:hover {
     opacity: 0.7; }
 
-.menu {
-  flex-grow: 1; }
-  .menu__navigation {
-    display: flex; }
-    @media (min-width: 0) {
-      .menu__navigation {
-        overflow-x: scroll; } }
-    @media (min-width: 1366px) {
-      .menu__navigation {
-        overflow-x: visible; } }
-    .menu__navigation::-webkit-scrollbar {
-      width: 0;
-      height: 0; }
-  .menu__points {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    justify-content: flex-start; }
-    @media (min-width: 0) {
-      .menu__points {
-        margin: 24px 16px;
-        flex-wrap: nowrap; } }
-    @media (min-width: 768px) {
-      .menu__points {
-        margin: 32px 24px; } }
-    @media (min-width: 1366px) {
-      .menu__points {
-        flex-wrap: wrap;
-        margin: 20px 32px 5px 32px;
-        row-gap: 10px; } }
-    .menu__points::after {
-      content: '';
-      height: 40px;
-      width: 24px;
-      position: absolute;
-      right: 0px;
-      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
-      @media (min-width: 0) {
-        .menu__points::after {
-          top: 176px; } }
-      @media (min-width: 768px) {
-        .menu__points::after {
-          top: 184px; } }
-      @media (min-width: 1366px) {
-        .menu__points::after {
-          display: none; } }
-  .menu__point {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    color: #7e7e82;
-    letter-spacing: -0.2px;
-    border: 2px solid transparent;
-    display: block;
-    padding: 6px 14px;
-    transition: border 0.3s, background-color 0.3s; }
-    .menu__point:hover {
-      background-color: #ffffff;
-      border: 2px solid #b8ffec;
-      border-radius: 6px; }
+.menu__navigation {
+  display: flex; }
   @media (min-width: 0) {
-    .menu__brands {
-      margin-top: 24px; } }
-  @media (min-width: 768px) {
-    .menu__brands {
-      margin: 32px 0; } }
+    .menu__navigation {
+      overflow-x: scroll; } }
   @media (min-width: 1366px) {
-    .menu__brands {
-      margin: 50px 0; } }
+    .menu__navigation {
+      overflow-x: visible; } }
+  .menu__navigation::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+
+.menu__points {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: flex-start; }
+  @media (min-width: 0) {
+    .menu__points {
+      margin: 24px 16px;
+      flex-wrap: nowrap; } }
   @media (min-width: 768px) {
-    .menu__technics {
-      margin-bottom: 32px; } }
+    .menu__points {
+      margin: 32px 24px; } }
   @media (min-width: 1366px) {
-    .menu__technics {
-      margin-bottom: 50px; } }
+    .menu__points {
+      flex-wrap: wrap;
+      margin: 20px 32px 5px 32px;
+      row-gap: 10px; } }
+  .menu__points::after {
+    content: '';
+    height: 40px;
+    width: 24px;
+    position: absolute;
+    right: 0px;
+    background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+    @media (min-width: 0) {
+      .menu__points::after {
+        top: 176px; } }
+    @media (min-width: 768px) {
+      .menu__points::after {
+        top: 184px; } }
+    @media (min-width: 1366px) {
+      .menu__points::after {
+        display: none; } }
+
+.menu__point {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #7e7e82;
+  letter-spacing: -0.2px;
+  border: 2px solid transparent;
+  display: block;
+  padding: 6px 14px;
+  transition: border 0.3s, background-color 0.3s; }
+  .menu__point:hover {
+    background-color: #ffffff;
+    border: 2px solid #b8ffec;
+    border-radius: 6px; }
+
+@media (min-width: 0) {
+  .menu__brands {
+    margin-top: 24px; } }
+
+@media (min-width: 768px) {
+  .menu__brands {
+    margin: 32px 0; } }
+
+@media (min-width: 1366px) {
+  .menu__brands {
+    margin: 50px 0; } }
+
+@media (min-width: 768px) {
+  .menu__technics {
+    margin-bottom: 32px; } }
+
+@media (min-width: 1366px) {
+  .menu__technics {
+    margin-bottom: 50px; } }
 
 .section-block {
   display: flex; }
@@ -1947,6 +1952,8 @@ a {
   @media (min-width: 1366px) {
     .container {
       max-width: 1120px; } }
+  .container__main {
+    flex-grow: 1; }
 
 .menu-header__content {
   display: flex;
